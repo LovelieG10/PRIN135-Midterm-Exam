@@ -1,0 +1,83 @@
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png);
+    display: flex;
+    justify-content: center
+}
+
+form {
+    background-color: rgba(0, 0, 0, .9);
+    color: rgb(255, 255, 255)
+}
+
+header h1 {
+    text-align: center;
+    margin: 1% auto;
+}
+
+.email {
+    width: 500px;
+    height: 30px;
+    margin: auto 30px 30px 30px
+}
+.mail {
+    text-align: center;
+}
+.email-label {
+    margin: 5%;
+}
+
+.password {
+    width: 500px;
+    height: 30px;
+    margin: auto 30px 5px 30px
+}
+.pass {
+    text-align: center;
+}
+.password-label {
+    margin: 5%;
+}
+
+.remember {
+    margin: 5px 30px 10px 30px
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 3px solid green;
+}
+
+.container {
+    background-color: green;
+    width: 500px;
+    height: 30px;
+    margin: 5px 30px 10px 30px;
+    left: 50%;
+    right: 50%;
+}
+
+footer {
+    margin: 5px 30px 10px 30px
+}
+
+a {
+    color: white;
+  }
+  
+  a:visited {
+    color: blue;
+  }
+  
+  a:hover {
+    color: lightblue;
+  }
+  
+  a:active {
+    color: brown;
+  }
+
+  .right {
+    text-align: end;
+  }
