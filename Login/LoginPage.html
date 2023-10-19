@@ -4,6 +4,7 @@
 <head>
     <title>Login Page</title>
     <link href="./styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
@@ -16,32 +17,32 @@
             <div>
                 <label class="email-label">Email</label>
                 <div class="mail">
-                <input class="email" id="email" required type="email" placeholder="Enter your Email">
+                <input class="email" id="email" required type="email" placeholder="Enter your Email" name="ëmail">
             </div>
             </div>
 
             <div>
                 <label class="password-label">Password</label>
                 <div class="pass">
-                    <input class="password" id="password" required type="password" placeholder="Enter your Password">
+                    <input class="password" id="password" required type="password" placeholder="Enter your Password" name="password">
                 </div>
             </div>
 
             <div class="remember">
-                <input id="remember" type="checkbox">
+                <input id="remember" type="checkbox" name="remember">
                 <label> Remember Me?</label>
                 <a class="right" href="../ForgotPassword/ForgotPasswordPage.html">Forgot password?</a>
             </div>
 
             <div class="container">
-                <a href="../">login</a>
+                <input class="login" id="login" type="submit" name="login" value="Login">
             </div>
 
             <footer style="text-align: center;">
                 <p>Don't have an account?<a href="../SignUp/SignUpPage.html"> Sign Up here</a></p>
             </footer>
         </fieldset>
-        
+    </form>
 </body>
 
 </html>

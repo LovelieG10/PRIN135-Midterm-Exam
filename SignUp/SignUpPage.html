@@ -4,46 +4,48 @@
 <head>
     <title>Sign Up</title>
     <link href="./styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
-    <form id="login-form">
-        <fieldset class="center">
-            <header>
-                <h1>Sign Up</h1>
-            </header>
+    <div class="form">
+        <header>
+            <h1>Sign Up</h1>
+        </header>
+        <form id="login-form">
 
             <section>
-
                 <div class="row">
                     <div>
                         <label class="gn-label">Given Name</label>
                         <div class="givenname">
-                            <input class="col" id="email" required type="email" placeholder="Enter your Given Name">
+                            <input class="col" id="givenname" required type="text" placeholder="Enter your Given Name"
+                                name="givenname">
                         </div>
                     </div>
 
                     <div>
-                        <label class="col-label">Last Name</label>
+                        <label class="half-label">Last Name</label>
                         <div class="lastname">
-                            <input class="col" id="email" required type="email" placeholder="Enter your Last Name">
+                            <input class="col" id="lastname" required type="email" placeholder="Enter your Last Name"
+                                name="lastname">
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div>
-                        <label class="col-label">Age</label>
-                        <input class="col" id="email" required type="number" placeholder="Enter your Age" min="1"
-                            max="99">
+                        <label class="half-label">Age</label>
+                        <input class="col" id="age" required type="number" placeholder="Enter your Age" min="1" max="99"
+                            name="age">
                     </div>
                     <div>
-                        <label class="col-label">Gender</label>
+                        <label class="half-label">Gender</label>
                         <div class="col">
-                            <input type="radio" id="html" name="fav_language" value="Male">
-                            <label for="html">Male</label><br>
-                            <input type="radio" id="html" name="fav_language" value="Female">
-                            <label for="html">Female</label><br>
+                            <input type="radio" id="male" name="fav_language" value="Male" name="gender">
+                            <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="fav_language" value="Female" name="gender">
+                            <label for="female">Female</label><br>
                         </div>
                     </div>
                 </div>
@@ -51,93 +53,96 @@
                 <div>
                     <label class="col">Email</label>
                     <div class="lastname">
-                        <input class="age" id="email" required type="email" placeholder="Enter your Last Name">
+                        <input class="mail" id="email" required type="email" placeholder="Enter your Email"
+                            name="email">
                     </div>
                 </div>
 
                 <div class="row">
                     <div>
-                        <label class="col-label">Password</label>
+                        <label class="half-label">Password</label>
                         <div class="pass">
-                            <input class="col" id="password" required type="password" placeholder="Enter your Password">
+                            <input class="col" id="pass" required type="password" placeholder="Enter your Password"
+                                name="password">
                         </div>
                     </div>
 
                     <div>
-                        <label class="col-label">Confrim Password</label>
+                        <label class="half-label">Confrim Password</label>
                         <div class="pass">
-                            <input class="col" id="password" required type="password" placeholder="Enter your Password">
+                            <input class="col" id="confirm" required type="password" placeholder="Enter your Password"
+                                name="confirm">
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <label class="select-label">Year Level</label>
-                    <div class="pass">
-                        <select>
+                    <label class="whole-label">Year Level</label>
+                    <div>
+                        <select class="select">
                             <option value="">(Select Year Level)</option>
                             <option value="First Year">First Year</option>
                             <option value="Second Year">Second Year</option>
                             <option value="Third Year">Third Year</option>
                             <option value="Fourth Year">Fourth Year</option>
+                        </select>
                     </div>
                 </div>
-
             </section>
-            <div></div>
 
-            <section class="left">
-                <ol>
-                    <div class="left">
-                        <ul>
-                            <input type="checkbox">
-                            <label> Computer Architecture</label>
-                        </ul>
-                        <ul>
-                            <input type="checkbox">
-                            <label> Computer Networking</label>
-                        </ul>
-                        <ul>
-                            <input type="checkbox">
-                            <label> Computer Networking</label>
-                        </ul>
-                        <ul>
-                            <input type="checkbox">
-                            <label> Computer Programming</label>
-                        </ul>
-                        <ul>
-                            <input type="checkbox">
-                            <label> Database Management</label>
-                        </ul>
-                        <ul>
-                            <input type="checkbox">
-                            <label> System Administration</label>
-                        </ul>
-                        <ul>
-                            <input type="checkbox">
-                            <label> User Interface/Experience</label>
-                        </ul>
-                        <ul>
-                            <input type="checkbox">
-                            <label> Web Development</label>
-                        </ul>
-                </ol>
-
-                </div>
-
-                <p>Other skill not mentioned from above.</p>
-                <textarea></textarea>
-
-                <div class="container">
-                    <input clas="login" id="login" type="button" value="Login">
+            <section>
+                <div class="left">
+                    <p>What are your skills? (Check all that apply)</p>
+                    <div>
+                        <input type="checkbox">
+                        <label> Computer Architecture</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label> Computer Networking</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label> Computer Networking</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label> Computer Programming</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label> Database Management</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label> System Administration</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label> User Interface/Experience</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label> Web Development</label>
+                    </div>
                 </div>
             </section>
 
 
-            <footer style="text-align: center;">
-                <p><a href="../Login/LoginPage.html ">Back to login</a></p>
-            </footer>
-        </fieldset>
+            <p class="whole-label">Other skill not mentioned from above.</p>
+            <textarea> </textarea>
+
+            <div>
+                <input class="signup" id="signup" type="submit" name="signup" value="Sign Up">
+            </div>
+
+        </form>
+
+        <footer style="text-align: center;">
+            <p><a href="../Login/LoginPage.html ">Back to login</a></p>
+        </footer>
+
+    </div>
 </body>
 
 </html>
