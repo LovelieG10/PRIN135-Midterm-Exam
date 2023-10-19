@@ -2,13 +2,12 @@ body {
     background-image: url(https://fastly.picsum.photos/id/538/1080/720.jpg?hmac=Ftnb1nuwyCMn3ueq9h0AelyxIG0eeBmAminN3OP1NlE);
     display: flex;
     justify-content: center;
-    border-style:outset
 }
 
 .form {
     background-color: rgba(0, 0, 0, .9);
     color: rgb(255, 255, 255);
-
+    border-style: outset;
 }
 
 
@@ -71,14 +70,14 @@ header h1 {
 
 .select {
     padding:7px 243px;
-    margin: 5px 30px 30px 50px;
+    margin: 5px 30px 0px 50px;
 }
+
 
 .left {
     justify-content: center;
+    padding: 10px 50px;
 }
-
-
 
 
 textarea {
